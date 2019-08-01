@@ -8,12 +8,12 @@ import utils
 import configs
 import collections
 
-# 12GB
+# 2GB
 #memory_size = 700*1024*1024*1024
-memory_size = 12*1024*1024*1024
-# 100GB
+memory_size = 1*1024*1024*1024
+# 5GB
 #disk_size = 50*1024*1024*1024
-disk_size = 50*1024*1024*1024
+disk_size = 1*1024*1024*1024
 instance_name = 'mysql1'
 
 
@@ -49,18 +49,18 @@ def init_knobs(instance, num_more_knobs):
     global EXTENDED_KNOBS
     instance_name = instance
     # TODO: Test the request
-    use_request = False
-    if use_request:
-        if instance_name.find('tencent') != -1:
-            memory_size, disk_size = utils.get_tencent_instance_info(instance_name)
-        else:
-            memory_size = configs.instance_config[instance_name]['max_mem'] * 1024 * 1024 * 1024
-            #memory_size = configs.instance_config[instance_name]['memory']
-            disk_size = configs.instance_config[instance_name]['max_disk'] * 1024 * 1024 * 1024
-            #disk_size = configs.instance_config[instance_name]['disk']
-    else:
-        memory_size = configs.instance_config[instance_name]['max_mem'] * 1024 * 1024 * 1024
-        disk_size = configs.instance_config[instance_name]['max_disk'] * 1024 * 1024 * 1024
+    #use_request = False
+    #if use_request:
+    #    if instance_name.find('tencent') != -1:
+    #        memory_size, disk_size = utils.get_tencent_instance_info(instance_name)
+    #    else:
+    #        memory_size = configs.instance_config[instance_name]['max_mem'] * 1024 * 1024 * 1024
+    #        #memory_size = configs.instance_config[instance_name]['memory']
+    #        disk_size = configs.instance_config[instance_name]['max_disk'] * 1024 * 1024 * 1024
+    #        #disk_size = configs.instance_config[instance_name]['disk']
+    #else:
+        #memory_size = configs.instance_config[instance_name]['max_mem'] * 1024 * 1024 * 1024
+        #disk_size = configs.instance_config[instance_name]['max_disk'] * 1024 * 1024 * 1024
         #memory_size = configs.instance_config[instance_name]['memory']
         #disk_size = configs.instance_config[instance_name]['disk']
 
@@ -68,18 +68,25 @@ def init_knobs(instance, num_more_knobs):
         'skip_name_resolve': ['enum', ['ON', 'OFF']],
         'table_open_cache': ['integer', [1, 524288, 2000]],
         'max_connections': ['integer', [1100, 100000, 1100]],
-        'innodb_buffer_pool_size': ['integer', [1048576, memory_size, 134217728]],
-        'innodb_buffer_pool_instances': ['integer', [1, 64, 8]],
-        'innodb_log_files_in_group': ['integer', [2, 100, 2]],
-        'innodb_log_file_size': ['integer', [134217728, 5497558138, 50331648]],
+        'innodb_buffer_pool_size': ['integer', [1048576, 134217728, 134217728]],
+        #'innodb_buffer_pool_size': ['integer', [1048576, memory_size, 134217728]],
+        'innodb_buffer_pool_instances': ['integer', [1, 8, 8]],
+        #'innodb_buffer_pool_instances': ['integer', [1, 64, 8]],
+        'innodb_log_files_in_group': ['integer', [2, 8, 2]],
+        #'innodb_log_files_in_group': ['integer', [2, 100, 2]],
+        'innodb_log_file_size': ['integer', [1048576, 134217728, 134217727]],
+        #'innodb_log_file_size': ['integer', [134217728, 5497558138, 50331648]],
         'innodb_purge_threads': ['integer', [1, 32, 1]],
         'innodb_read_io_threads': ['integer', [1, 64, 4]],
         'innodb_write_io_threads': ['integer', [1, 64, 4]],
         'innodb_file_per_table': ['enum', ['OFF', 'ON']],
         'binlog_checksum': ['enum', ['NONE', 'CRC32']],
-        'binlog_cache_size': ['integer', [4096, 1073741824, 32768]],
-        'max_binlog_cache_size': ['integer', [4096, 4294967296, 4294967296]],
-        'max_binlog_size': ['integer', [4096, 1073741824, 1073741824]],
+        'binlog_cache_size': ['integer', [4096, 536870912, 32768]],
+        #'binlog_cache_size': ['integer', [4096, 1073741824, 32768]],
+        'max_binlog_cache_size': ['integer', [4096, 536870912, 536870912]],
+        #'max_binlog_cache_size': ['integer', [4096, 2147483648, 2147483648]],
+        'max_binlog_size': ['integer', [4096, 536870912, 536870912]],
+        #'max_binlog_size': ['integer', [4096, 1073741824, 1073741824]],
         'binlog_format': ['enum', ['ROW', 'MIXED']],
     }
 
@@ -94,7 +101,9 @@ def init_knobs(instance, num_more_knobs):
         'innodb_flush_log_at_timeout': ['integer', [1, 2700, 1]],
         # 'innodb_flush_neighbors': ['enum', [0, 2, 1]],
         'innodb_flushing_avg_loops': ['integer', [1, 1000, 30]],
-        'innodb_max_purge_lag': ['integer', [0, 4294967295, 0]],
+        'innodb_max_purge_lag': ['integer', [0, 134217728, 0]],
+        #'innodb_max_purge_lag': ['integer', [0, 2147483647, 0]],
+        #'innodb_max_purge_lag': ['integer', [0, 4294967295, 0]],
         'innodb_old_blocks_pct': ['integer', [5, 95, 37]],
         'innodb_read_ahead_threshold': ['integer', [0, 64, 56]],
         # max v 4294967295
@@ -116,10 +125,13 @@ def init_knobs(instance, num_more_knobs):
         'innodb_autoextend_increment': [' integer', [1, 1000, 64]],  # mysql 5.6.6: 64, mysql5.6.5: 8
         'innodb_buffer_pool_dump_at_shutdown': ['boolean', ['ON', 'OFF']],
         'innodb_buffer_pool_load_at_startup': ['boolean', ['ON', 'OFF']],
-        'innodb_concurrency_tickets': ['integer', [1, 4294967295, 5000]],  # 5.6.6: 5000, 5.6.5: 500
+        'innodb_concurrency_tickets': ['integer', [1, 134217728, 5000]],  # 5.6.6: 5000, 5.6.5: 500
+        #'innodb_concurrency_tickets': ['integer', [1, 2147483647, 5000]],  # 5.6.6: 5000, 5.6.5: 500
+        #'innodb_concurrency_tickets': ['integer', [1, 4294967295, 5000]],  # 5.6.6: 5000, 5.6.5: 500
         'innodb_disable_sort_file_cache': [' boolean', ['ON', 'OFF']],
         'innodb_large_prefix': ['boolean', ['ON', 'OFF']],
-        'innodb_log_buffer_size': ['integer', [262144, min(memory_size, 4294967295), 8388608]],
+        'innodb_log_buffer_size': ['integer', [262144, 134217728, 8388608]],
+        #'innodb_log_buffer_size': ['integer', [262144, min(memory_size, 4294967295), 8388608]],
         ##'tmp_table_size': ['integer', [1024, 18446744073709551615, 16777216]],
         # max 幾T该彍¢彈~P disk_size达X彘¯ memory_size﻾_
         'innodb_max_dirty_pages_pct': ['numeric', [0, 99, 75]],
@@ -153,7 +165,8 @@ def init_knobs(instance, num_more_knobs):
 
         'innodb_io_capacity': ['integer', [100, 2000000, 200]],
         'innodb_lru_scan_depth': ['integer', [100, 134217728, 1024]],
-        'innodb_old_blocks_time': ['integer', [0, 4294967295, 1000]],
+        'innodb_old_blocks_time': ['integer', [0, 2147483647, 1000]],
+        #'innodb_old_blocks_time': ['integer', [0, 4294967295, 1000]],
         'innodb_purge_batch_size': ['integer', [1, 5000, 300]],
         # def v  max 18446744073709547520
         'innodb_spin_wait_delay': ['integer', [0, 6000, 6]],
@@ -212,8 +225,11 @@ def gen_continuous(action):
         if name == 'innodb_log_file_size':
             # group * size = 32GB
             max_val = disk_size / knobs['innodb_log_files_in_group']
+            print("the innodb_log_file_size's max_val is %d" % max_val)
+            print("the innodb_log_file_size's action is %d" % action[idx])
             eval_value = int(max_val * action[idx])
             eval_value = max(eval_value, min_value)
+            print("the innodb_log_file_size's action is %d" % eval_value)
 
         knobs[name] = eval_value
 

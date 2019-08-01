@@ -209,11 +209,12 @@ class MySQLEnv(object):
         internal_metrics = []
         self._get_internal_metrics(internal_metrics)
         #calculate the sysbench time automaticly
+        # why the condition?
         if knob['innodb_buffer_pool_size'] < 161061273600:
-            time_sysbench = 13
-            #time_sysbench = 150
+            time_sysbench = 150
         else:
             time_sysbench = int(knob['innodb_buffer_pool_size']/1024.0/1024.0/1024.0/1.1)
+
         if method == 'sysbench':
             a = time.time()
             print('test start!')

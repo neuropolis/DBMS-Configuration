@@ -6,6 +6,7 @@ Train the model
 import os
 import sys
 import utils
+import pickle
 import argparse
 sys.path.append('../')
 import models
@@ -33,7 +34,8 @@ if __name__ == '__main__':
     parser.add_argument('--noisy', action='store_true', help='use noisy linear layer')
     parser.add_argument('--other_knob', type=int, default=0, help='Number of other knobs')
     parser.add_argument('--batch_size', type=int, default=16, help='Training Batch Size')
-    parser.add_argument('--epoches', type=int, default=5000000, help='Training Epoches')
+    parser.add_argument('--epoches', type=int, default=100, help='Training Epoches')
+    #parser.add_argument('--epoches', type=int, default=5000000, help='Training Epoches')
     parser.add_argument('--benchmark', type=str, default='sysbench', help='[sysbench, tpcc]')
     parser.add_argument('--metric_num', type=int, default=63, help='metric nums')
     parser.add_argument('--default_knobs', type=int, default=16, help='default knobs')
@@ -160,7 +162,7 @@ if __name__ == '__main__':
                 logger.info("[dqn] Q:{} Action: {}".format(qvalue, action))
 
             env_step_time = utils.time_start()
-            # env receives action and gives back reward r(t) and next state s(t+1)
+            # env receives action and give back reward r_t and next state s_t+1
             reward, state_, done, score, metrics, restart_time = env.step(current_knob)
             env_step_time = utils.time_end(env_step_time)
             logger.info(

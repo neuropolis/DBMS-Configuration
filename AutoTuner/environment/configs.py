@@ -11,7 +11,7 @@ instance_config = {'mysql1' :
 			'passwd' :'',
 			'password' :'',
 			'port' : 3306,
-			'max_mem' : 10,
-			'max_disk' : 20
+			'max_mem' : 2,
+			'max_disk' : 2
 			}
 		}
