@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+Logger	utils.py	/^class Logger:$/;"	c
+__init__	utils.py	/^    def __init__(self, name, log_file=''):$/;"	m	class:Logger
+_write_file	utils.py	/^    def _write_file(self, msg):$/;"	m	class:Logger
+aggravate_memories	memory_utils.py	/^def aggravate_memories(mem_dir, save_path):$/;"	f
+aggravate_sapairs	collect_fine_sas.py	/^def aggravate_sapairs(sa_dir, save_path):$/;"	f
+ault	evaluate.py	/^    delta_latency = 100*(-current[1] + default[1]) \/ default[1]$/;"	f	function:compute_percentage
+ault	evaluate.py	/^    delta_tps = 100*(current[0] - default[0]) \/ default[0]$/;"	f	function:compute_percentage
+ault	evaluate.py	/^    parser.add_argument('--batch_size', type=int, default=2, help='Training Batch Size')$/;"	f	function:prepare
+ault	evaluate.py	/^    parser.add_argument('--memory', type=str, default='', help='add replay memory')$/;"	f	function:prepare
+ault	get_proposal_knob.py	/^    parser.add_argument('--instance', type=str, default='mysql1', help='Choose MySQL Instance')$/;"	f	function:setting_knob
+ault	get_proposal_knob.py	/^    parser.add_argument('--knobfile', type=str, default='', help='Knob file path')$/;"	f	function:setting_knob
+ault	get_proposal_knob.py	/^    parser.add_argument('--knobidx', type=int, default=-1, help='Proposal Knob Index in file')$/;"	f	function:setting_knob
+ault	get_proposal_knob.py	/^    parser.add_argument('--ratio', type=float, default=0.5, help='tps versus lat ration')$/;"	f	function:setting_knob
+ault	memory_utils.py	/^    parser.add_argument('--phase', default='stats', type=str, help='actions: [stats, aggravate]')$/;"	f	function:calculate_stats
+ault	supervised_train.py	/^parser.add_argument('--batch_size', type=int, default=64, help='training batch size')$/;"	f
+ault	supervised_train.py	/^parser.add_argument('--epoches', type=int, default=20, help='training epoches')$/;"	f
+ault	supervised_train.py	/^parser.add_argument('--instance', type=str, default='mysql1', help='Choose MySQL Instance')$/;"	f
+ault	supervised_train.py	/^parser.add_argument('--params', type=str, default='', help='Load existing parameters')$/;"	f
+ault	supervised_train.py	/^parser.add_argument('--phase', type=str, default='train', help='train or test')$/;"	f
+ault	supervised_train.py	/^parser.add_argument('--sa_path', type=str, default='', help='state action dataset')$/;"	f
+ault	supervised_train.py	/^parser.add_argument('--workload', type=str, default='read', help='Workload type [`read`, `write`, `readwrite`]')$/;"	f
+ault	train.py	/^    parser.add_argument('--batch_size', type=int, default=16, help='Training Batch Size')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--benchmark', type=str, default='sysbench', help='[sysbench, tpcc]')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--default_knobs', type=int, default=16, help='default knobs')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--epoches', type=int, default=100, help='Training Epoches')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--instance', type=str, default='mysql1', help='Choose MySQL Instance')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--memory', type=str, default='', help='add replay memory')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--method', type=str, default='ddpg', help='Choose Algorithm to solve [`ddpg`,`dqn`]')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--metric_num', type=int, default=63, help='metric nums')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--other_knob', type=int, default=0, help='Number of other knobs')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--params', type=str, default='', help='Load existing parameters')$/;"	f	function:generate_knob
+ault	train.py	/^    parser.add_argument('--workload', type=str, default='read', help='Workload type [`read`, `write`, `readwrite`]')$/;"	f	function:generate_knob
+ault_knobs	train.py	/^        num_actions = opt.default_knobs + opt.other_knob$/;"	f	function:generate_knob/ault
+ault_konbs	supervised_train.py	/^    default_konbs = environment.get_init_knobs()$/;"	f	function:ault
+ault_konbs	supervised_train.py	/^    metric1 = env.eval(default_konbs)$/;"	f	function:ault
+ault_metrics	evaluate.py	/^    _tps, _lat = compute_percentage(default_metrics, metrics)$/;"	f	function:ault_metrics
+ault_metrics	evaluate.py	/^current_state, default_metrics = env.initialize()$/;"	f
+ault_metrics	evaluate.py	/^logger.info("[Environment Intialize]Tps: {} Lat:{}".format(default_metrics[0], default_metrics[1]))$/;"	f
+calculate_stats	memory_utils.py	/^def calculate_stats(mem_dir, save_path):$/;"	f
+compute_percentage	evaluate.py	/^def compute_percentage(default, current):$/;"	f
+error	utils.py	/^    def error(self, msg):$/;"	m	class:Logger
+generate_knob	evaluate.py	/^def generate_knob(action, method):$/;"	f
+generate_knob	supervised_train.py	/^    def generate_knob(action):$/;"	f	function:ault
+generate_knob	train.py	/^def generate_knob(action, method):$/;"	f
+get_proposal_knob	get_proposal_knob.py	/^def get_proposal_knob(filename, gamma=0.5, idx=-1):$/;"	f
+get_timestamp	utils.py	/^def get_timestamp():$/;"	f
+get_timestr	utils.py	/^    def get_timestr(self):$/;"	m	class:Logger
+info	utils.py	/^    def info(self, msg):$/;"	m	class:Logger
+prepare	evaluate.py	/^def prepare():$/;"	f
+save_state_actions	utils.py	/^def save_state_actions(state_action, filename):$/;"	f
+setting_knob	get_proposal_knob.py	/^def setting_knob(env, knob):$/;"	f
+time_end	utils.py	/^def time_end(start):$/;"	f
+time_start	utils.py	/^def time_start():$/;"	f
+time_to_str	utils.py	/^def time_to_str(timestamp):$/;"	f
+warn	utils.py	/^    def warn(self, msg):$/;"	m	class:Logger

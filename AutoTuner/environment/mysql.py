@@ -123,9 +123,7 @@ class MySQLEnv(object):
                 timer.cancel()
             try:
                 data = utils.get_metrics(self.db_info)
-		print(data)
                 internal_metrics.append(data)
-		print(internal_metrics)
             except MySQLdb.Error as e:
                 print("[GET Metrics]Exception:%s" % e.message)
 
@@ -226,10 +224,10 @@ class MySQLEnv(object):
                                                                                    time_sysbench,
                                                                                    filename))
             print('test finished!')
-            #a = time.time() - a
-            #if a < 50:
-            #    return None
-            #time.sleep(10)
+            a = time.time() - a
+            if a < 50:
+                return None
+            time.sleep(10)
         elif method == 'tpcc':
             def kill_tpcc():
                 def _filter_pid(x):
@@ -256,10 +254,7 @@ class MySQLEnv(object):
             time.sleep(10)
 
         external_metrics = self._get_external_metrics(filename, method)
-	print(external_metrics)
-        print(internal_metrics)
         internal_metrics = self._post_handle(internal_metrics)
-        print(internal_metrics)
 
         return external_metrics, internal_metrics
 

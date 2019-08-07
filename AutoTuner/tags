@@ -1,0 +1,231 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+Actor	models/ddpg.py	/^class Actor(nn.Module):$/;"	c
+ActorLow	models/ddpg.py	/^class ActorLow(nn.Module):$/;"	c
+CONST	environment/base.py	/^class CONST:$/;"	c
+Critic	models/ddpg.py	/^class Critic(nn.Module):$/;"	c
+CriticLow	models/ddpg.py	/^class CriticLow(nn.Module):$/;"	c
+DDPG	models/ddpg.py	/^class DDPG(object):$/;"	c
+DQN	models/dqn.py	/^class DQN(object):$/;"	c
+Err	environment/base.py	/^class Err(IntEnum):$/;"	c
+Err_Detail	environment/base.py	/^class Err_Detail:$/;"	c
+Logger	environment/base.py	/^def Logger(name="default_log", logger_level="debug" ):$/;"	f
+Logger	tuner/utils.py	/^class Logger:$/;"	c
+MySQLEnv	environment/mysql.py	/^class MySQLEnv(object):$/;"	c
+NoisyLinear	models/ddpg.py	/^class NoisyLinear(nn.Linear):$/;"	c
+Normalizer	models/ddpg.py	/^class Normalizer(object):$/;"	c
+OUProcess	models/OUProcess.py	/^class OUProcess(object):$/;"	c
+PrioritizedReplayMemory	models/prioritized_replay_memory.py	/^class PrioritizedReplayMemory(object):$/;"	c
+ReplayMemory	models/replay_memory.py	/^class ReplayMemory(object):$/;"	c
+Server	environment/mysql.py	/^class Server(MySQLEnv):$/;"	c
+Status	environment/mysql.py	/^class Status(object):$/;"	c
+SumTree	models/prioritized_replay_memory.py	/^class SumTree(object):$/;"	c
+TencentServer	environment/mysql.py	/^class TencentServer(MySQLEnv):$/;"	c
+TimeoutTransport	environment/utils.py	/^class TimeoutTransport(xmlrpclib.Transport):$/;"	c
+__call__	models/ddpg.py	/^    def __call__(self, x, *args, **kwargs):$/;"	m	class:Normalizer	file:
+__init__	environment/db.py	/^    def __init__(self, dbhost=None, dbport=None, dbuser=None, dbpwd=None, dbname=None):    $/;"	m	class:database
+__init__	environment/mysql.py	/^    def __init__(self, wk_type, instance_name):$/;"	m	class:Server
+__init__	environment/mysql.py	/^    def __init__(self, wk_type, instance_name, method='sysbench', num_metric=63, num_other_knobs=0):$/;"	m	class:TencentServer
+__init__	environment/mysql.py	/^    def __init__(self, wk_type='read', method='sysbench', num_other_knobs=0, num_metric=63, alpha=1.0, beta1=0.5, beta2=0.5, time_decay1=1.0, time_decay2=1.0):$/;"	m	class:MySQLEnv
+__init__	models/OUProcess.py	/^    def __init__(self, n_actions, theta=0.15, mu=0, sigma=0.1, ):$/;"	m	class:OUProcess
+__init__	models/ddpg.py	/^    def __init__(self, in_features, out_features, sigma_init=0.05, bias=True):$/;"	m	class:NoisyLinear
+__init__	models/ddpg.py	/^    def __init__(self, mean, variance):$/;"	m	class:Normalizer
+__init__	models/ddpg.py	/^    def __init__(self, n_states, n_actions):$/;"	m	class:Critic
+__init__	models/ddpg.py	/^    def __init__(self, n_states, n_actions):$/;"	m	class:CriticLow
+__init__	models/ddpg.py	/^    def __init__(self, n_states, n_actions, ):$/;"	m	class:ActorLow
+__init__	models/ddpg.py	/^    def __init__(self, n_states, n_actions, noisy=False):$/;"	m	class:Actor
+__init__	models/ddpg.py	/^    def __init__(self, n_states, n_actions, opt, ouprocess=True, mean_var_path=None, supervised=False):$/;"	m	class:DDPG
+__init__	models/dqn.py	/^    def __init__(self):$/;"	m	class:DQN
+__init__	models/prioritized_replay_memory.py	/^    def __init__(self, capacity):$/;"	m	class:PrioritizedReplayMemory
+__init__	models/prioritized_replay_memory.py	/^    def __init__(self, capacity):$/;"	m	class:SumTree
+__init__	models/replay_memory.py	/^    def __init__(self, capacity):$/;"	m	class:ReplayMemory
+__init__	tuner/utils.py	/^    def __init__(self, name, log_file=''):$/;"	m	class:Logger
+__len__	models/prioritized_replay_memory.py	/^    def __len__(self):$/;"	m	class:PrioritizedReplayMemory	file:
+__len__	models/replay_memory.py	/^    def __len__(self):$/;"	m	class:ReplayMemory	file:
+_apply_knobs	environment/mysql.py	/^    def _apply_knobs(self, knob):$/;"	m	class:MySQLEnv
+_apply_knobs	environment/mysql.py	/^    def _apply_knobs(self, knob):$/;"	m	class:Server
+_apply_knobs	environment/mysql.py	/^    def _apply_knobs(self, knob):$/;"	m	class:TencentServer
+_build_actor	models/ddpg.py	/^    def _build_actor(self):$/;"	m	class:DDPG
+_build_network	models/ddpg.py	/^    def _build_network(self):$/;"	m	class:DDPG
+_calculate_reward	environment/mysql.py	/^    def _calculate_reward(delta0, deltat):$/;"	m	class:MySQLEnv
+_filter_pid	environment/mysql.py	/^                def _filter_pid(x):$/;"	f	function:MySQLEnv._get_state/kill_tpcc
+_get_external_metrics	environment/mysql.py	/^    def _get_external_metrics(path, method='sysbench'):$/;"	m	class:MySQLEnv
+_get_internal_metrics	environment/mysql.py	/^    def _get_internal_metrics(self, internal_metrics):$/;"	m	class:MySQLEnv
+_get_priority	models/prioritized_replay_memory.py	/^    def _get_priority(self, error):$/;"	m	class:PrioritizedReplayMemory
+_get_reward	environment/mysql.py	/^    def _get_reward(self, external_metrics):$/;"	m	class:MySQLEnv
+_get_setup_state	environment/mysql.py	/^    def _get_setup_state(self, workid):$/;"	m	class:TencentServer
+_get_state	environment/mysql.py	/^    def _get_state(self, knob, method='sysbench'):$/;"	m	class:MySQLEnv
+_init_weights	models/ddpg.py	/^    def _init_weights(self):$/;"	m	class:Actor
+_init_weights	models/ddpg.py	/^    def _init_weights(self):$/;"	m	class:ActorLow
+_init_weights	models/ddpg.py	/^    def _init_weights(self):$/;"	m	class:Critic
+_init_weights	models/ddpg.py	/^    def _init_weights(self):$/;"	m	class:CriticLow
+_post_handle	environment/mysql.py	/^    def _post_handle(self, metrics):$/;"	m	class:MySQLEnv
+_propagate	models/prioritized_replay_memory.py	/^    def _propagate(self, idx, change):$/;"	m	class:SumTree
+_retrieve	models/prioritized_replay_memory.py	/^    def _retrieve(self, idx, s):$/;"	m	class:SumTree
+_sample_batch	models/ddpg.py	/^    def _sample_batch(self):$/;"	m	class:DDPG
+_set_params	environment/mysql.py	/^    def _set_params(self, knob):$/;"	m	class:TencentServer
+_terminate	environment/mysql.py	/^    def _terminate(self):$/;"	m	class:MySQLEnv
+_update_target	models/ddpg.py	/^    def _update_target(target, source, tau):$/;"	m	class:DDPG
+_write_file	tuner/utils.py	/^    def _write_file(self, msg):$/;"	m	class:Logger
+add	models/prioritized_replay_memory.py	/^    def add(self, error, sample):$/;"	m	class:PrioritizedReplayMemory
+add	models/prioritized_replay_memory.py	/^    def add(self, p, data):$/;"	m	class:SumTree
+add_desc	environment/base.py	/^    def add_desc(self,err,desc):$/;"	m	class:Err_Detail
+add_sample	models/ddpg.py	/^    def add_sample(self, state, action, reward, next_state, terminate):$/;"	m	class:DDPG
+aggravate_memories	tuner/memory_utils.py	/^def aggravate_memories(mem_dir, save_path):$/;"	f
+aggravate_sapairs	tuner/collect_fine_sas.py	/^def aggravate_sapairs(sa_dir, save_path):$/;"	f
+ault	tuner/evaluate.py	/^    delta_latency = 100*(-current[1] + default[1]) \/ default[1]$/;"	f	function:compute_percentage
+ault	tuner/evaluate.py	/^    delta_tps = 100*(current[0] - default[0]) \/ default[0]$/;"	f	function:compute_percentage
+ault	tuner/evaluate.py	/^    parser.add_argument('--batch_size', type=int, default=2, help='Training Batch Size')$/;"	f	function:prepare
+ault	tuner/evaluate.py	/^    parser.add_argument('--memory', type=str, default='', help='add replay memory')$/;"	f	function:prepare
+ault	tuner/get_proposal_knob.py	/^    parser.add_argument('--instance', type=str, default='mysql1', help='Choose MySQL Instance')$/;"	f	function:setting_knob
+ault	tuner/get_proposal_knob.py	/^    parser.add_argument('--knobfile', type=str, default='', help='Knob file path')$/;"	f	function:setting_knob
+ault	tuner/get_proposal_knob.py	/^    parser.add_argument('--knobidx', type=int, default=-1, help='Proposal Knob Index in file')$/;"	f	function:setting_knob
+ault	tuner/get_proposal_knob.py	/^    parser.add_argument('--ratio', type=float, default=0.5, help='tps versus lat ration')$/;"	f	function:setting_knob
+ault	tuner/memory_utils.py	/^    parser.add_argument('--phase', default='stats', type=str, help='actions: [stats, aggravate]')$/;"	f	function:calculate_stats
+ault	tuner/supervised_train.py	/^parser.add_argument('--batch_size', type=int, default=64, help='training batch size')$/;"	f
+ault	tuner/supervised_train.py	/^parser.add_argument('--epoches', type=int, default=20, help='training epoches')$/;"	f
+ault	tuner/supervised_train.py	/^parser.add_argument('--instance', type=str, default='mysql1', help='Choose MySQL Instance')$/;"	f
+ault	tuner/supervised_train.py	/^parser.add_argument('--params', type=str, default='', help='Load existing parameters')$/;"	f
+ault	tuner/supervised_train.py	/^parser.add_argument('--phase', type=str, default='train', help='train or test')$/;"	f
+ault	tuner/supervised_train.py	/^parser.add_argument('--sa_path', type=str, default='', help='state action dataset')$/;"	f
+ault	tuner/supervised_train.py	/^parser.add_argument('--workload', type=str, default='read', help='Workload type [`read`, `write`, `readwrite`]')$/;"	f
+ault	tuner/train.py	/^    parser.add_argument('--batch_size', type=int, default=16, help='Training Batch Size')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--benchmark', type=str, default='sysbench', help='[sysbench, tpcc]')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--default_knobs', type=int, default=16, help='default knobs')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--epoches', type=int, default=100, help='Training Epoches')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--instance', type=str, default='mysql1', help='Choose MySQL Instance')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--memory', type=str, default='', help='add replay memory')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--method', type=str, default='ddpg', help='Choose Algorithm to solve [`ddpg`,`dqn`]')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--metric_num', type=int, default=63, help='metric nums')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--other_knob', type=int, default=0, help='Number of other knobs')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--params', type=str, default='', help='Load existing parameters')$/;"	f	function:generate_knob
+ault	tuner/train.py	/^    parser.add_argument('--workload', type=str, default='read', help='Workload type [`read`, `write`, `readwrite`]')$/;"	f	function:generate_knob
+ault_externam_metrics	environment/mysql.py	/^        delta_0_lat = float((-external_metrics[1] + self.default_externam_metrics[1])) \/ self.default_externam_metrics[1]$/;"	f	function:MySQLEnv._get_reward
+ault_externam_metrics	environment/mysql.py	/^        delta_0_tps = float((external_metrics[0] - self.default_externam_metrics[0]))\/self.default_externam_metrics[0]$/;"	f	function:MySQLEnv._get_reward
+ault_externam_metrics	environment/mysql.py	/^        self.default_externam_metrics = None$/;"	f	function:MySQLEnv.__init__
+ault_externam_metrics	environment/mysql.py	/^        self.default_externam_metrics = external_metrics$/;"	f	function:Server.initialize
+ault_externam_metrics	environment/mysql.py	/^        self.default_externam_metrics = external_metrics$/;"	f	function:TencentServer.initialize
+ault_knobs	environment/mysql.py	/^                configuration=self.default_knobs$/;"	f	function:Server._apply_knobs
+ault_knobs	environment/mysql.py	/^            flag = self._apply_knobs(self.default_knobs)$/;"	f	function:Server.initialize/ault_knobs
+ault_knobs	environment/mysql.py	/^            flag = self._apply_knobs(self.default_knobs)$/;"	f	function:TencentServer.initialize/ault_knobs
+ault_knobs	environment/mysql.py	/^            params = ''$/;"	f	function:Server._apply_knobs
+ault_knobs	environment/mysql.py	/^            self.default_knobs,$/;"	f	function:Server.initialize/ault_externam_metrics
+ault_knobs	environment/mysql.py	/^            self.default_knobs,$/;"	f	function:TencentServer.initialize/ault_externam_metrics
+ault_knobs	environment/mysql.py	/^        external_metrics, internal_metrics = self._get_state(knob = self.default_knobs, method=self.method)$/;"	f	function:Server.initialize
+ault_knobs	environment/mysql.py	/^        external_metrics, internal_metrics = self._get_state(knob = self.default_knobs, method=self.method)$/;"	f	function:TencentServer.initialize
+ault_knobs	environment/mysql.py	/^        flag = self._apply_knobs(self.default_knobs)$/;"	f	function:Server.initialize
+ault_knobs	environment/mysql.py	/^        flag = self._apply_knobs(self.default_knobs)$/;"	f	function:TencentServer.initialize
+ault_knobs	environment/mysql.py	/^        self.default_knobs = knobs.get_init_knobs()$/;"	f	function:Server.__init__
+ault_knobs	environment/mysql.py	/^        self.default_knobs = knobs.get_init_knobs()$/;"	f	function:TencentServer.__init__
+ault_knobs	tuner/train.py	/^        num_actions = opt.default_knobs + opt.other_knob$/;"	f	function:generate_knob/ault
+ault_konbs	tuner/supervised_train.py	/^    default_konbs = environment.get_init_knobs()$/;"	f	function:ault
+ault_konbs	tuner/supervised_train.py	/^    metric1 = env.eval(default_konbs)$/;"	f	function:ault
+ault_metrics	tuner/evaluate.py	/^    _tps, _lat = compute_percentage(default_metrics, metrics)$/;"	f	function:ault_metrics
+ault_metrics	tuner/evaluate.py	/^current_state, default_metrics = env.initialize()$/;"	f
+ault_metrics	tuner/evaluate.py	/^logger.info("[Environment Intialize]Tps: {} Lat:{}".format(default_metrics[0], default_metrics[1]))$/;"	f
+calculate_stats	tuner/memory_utils.py	/^def calculate_stats(mem_dir, save_path):$/;"	f
+check_start	server/server.py	/^def check_start():$/;"	f
+choose_action	models/ddpg.py	/^    def choose_action(self, x):$/;"	m	class:DDPG
+choose_action	models/dqn.py	/^    def choose_action(self, x):$/;"	m	class:DQN
+close	environment/db.py	/^    def close(self):$/;"	m	class:database
+collect_metric	environment/mysql.py	/^        def collect_metric(counter):$/;"	f	function:MySQLEnv._get_internal_metrics
+compute_percentage	tuner/evaluate.py	/^def compute_percentage(default, current):$/;"	f
+connectMySQL	environment/db.py	/^    def connectMySQL(self):$/;"	m	class:database
+database	environment/db.py	/^class database:$/;"	c
+do	environment/mysql.py	/^        def do(metric_name, metric_values):$/;"	f	function:MySQLEnv._post_handle
+error	tuner/utils.py	/^    def error(self, msg):$/;"	m	class:Logger
+eval	environment/mysql.py	/^    def eval(self, knob):$/;"	m	class:MySQLEnv
+fetch_all	environment/db.py	/^    def fetch_all(self, sql , json=True):$/;"	m	class:database
+forward	models/ddpg.py	/^    def forward(self, input):$/;"	m	class:NoisyLinear
+forward	models/ddpg.py	/^    def forward(self, x):$/;"	m	class:Actor
+forward	models/ddpg.py	/^    def forward(self, x):$/;"	m	class:ActorLow
+forward	models/ddpg.py	/^    def forward(self, x, action):$/;"	m	class:Critic
+forward	models/ddpg.py	/^    def forward(self, x, action):$/;"	m	class:CriticLow
+gen_continuous	environment/knobs.py	/^def gen_continuous(action):$/;"	f
+gen_continuous	environment/knobsALL.py	/^def gen_continuous(action):$/;"	f
+gen_continuous	environment/knobsNotDecreasMAX.py	/^def gen_continuous(action):$/;"	f
+generate_knob	tuner/evaluate.py	/^def generate_knob(action, method):$/;"	f
+generate_knob	tuner/supervised_train.py	/^    def generate_knob(action):$/;"	f	function:ault
+generate_knob	tuner/train.py	/^def generate_knob(action, method):$/;"	f
+get	models/prioritized_replay_memory.py	/^    def get(self, s):$/;"	m	class:SumTree
+get_init_knobs	environment/knobs.py	/^def get_init_knobs():$/;"	f
+get_init_knobs	environment/knobsALL.py	/^def get_init_knobs():$/;"	f
+get_init_knobs	environment/knobsNotDecreasMAX.py	/^def get_init_knobs():$/;"	f
+get_metric_type	environment/utils.py	/^def get_metric_type(metric):$/;"	f
+get_metrics	environment/utils.py	/^def get_metrics(config):$/;"	f
+get_mysql_state	environment/utils.py	/^def get_mysql_state(server_ip):$/;"	f
+get_proposal_knob	tuner/get_proposal_knob.py	/^def get_proposal_knob(filename, gamma=0.5, idx=-1):$/;"	f
+get_state	server/server.py	/^def get_state():$/;"	f
+get_tencent_instance_info	environment/utils.py	/^def get_tencent_instance_info(instance_name):$/;"	f
+get_timestamp	tuner/utils.py	/^def get_timestamp():$/;"	f
+get_timestr	tuner/utils.py	/^    def get_timestr(self):$/;"	m	class:Logger
+info	tuner/utils.py	/^    def info(self, msg):$/;"	m	class:Logger
+init_knobs	environment/knobs.py	/^def init_knobs(instance, num_more_knobs):$/;"	f
+init_knobs	environment/knobsALL.py	/^def init_knobs(instance, num_more_knobs):$/;"	f
+init_knobs	environment/knobsNotDecreasMAX.py	/^def init_knobs(instance, num_more_knobs):$/;"	f
+init_logger	environment/base.py	/^def init_logger(task_id,write_console = False,write_file=True):$/;"	f
+initialize	environment/mysql.py	/^    def initialize(self):$/;"	m	class:MySQLEnv
+initialize	environment/mysql.py	/^    def initialize(self):$/;"	m	class:Server
+initialize	environment/mysql.py	/^    def initialize(self):$/;"	m	class:TencentServer
+kill_tpcc	environment/mysql.py	/^            def kill_tpcc():$/;"	f	function:MySQLEnv._get_state
+load_actor	models/ddpg.py	/^    def load_actor(self, path):$/;"	m	class:DDPG
+load_memory	models/prioritized_replay_memory.py	/^    def load_memory(self, path):$/;"	m	class:PrioritizedReplayMemory
+load_memory	models/replay_memory.py	/^    def load_memory(self, path):$/;"	m	class:ReplayMemory
+load_model	models/ddpg.py	/^    def load_model(self, model_name):$/;"	m	class:DDPG
+load_model	models/dqn.py	/^    def load_model(self, model_name):$/;"	m	class:DQN
+make_connection	environment/utils.py	/^    def make_connection(self, host):$/;"	m	class:TimeoutTransport
+method	environment/base.py	/^    @classmethod $/;"	c	class:Err_Detail
+modify_configurations	environment/utils.py	/^def modify_configurations(server_ip, instance_name, configuration):$/;"	f
+noise	models/OUProcess.py	/^    def noise(self):$/;"	m	class:OUProcess
+normalize	models/ddpg.py	/^    def normalize(self, x):$/;"	m	class:Normalizer
+os_quit	environment/base.py	/^def os_quit(err,detail=""):$/;"	f
+parse_sysbench	environment/mysql.py	/^        def parse_sysbench(file_path):$/;"	f	function:MySQLEnv._get_external_metrics
+parse_tpcc	environment/mysql.py	/^        def parse_tpcc(file_path):$/;"	f	function:MySQLEnv._get_external_metrics
+prepare	tuner/evaluate.py	/^def prepare():$/;"	f
+push	models/replay_memory.py	/^    def push(self, state, action, next_state, reward, terminate):$/;"	m	class:ReplayMemory
+read_machine	environment/utils.py	/^def read_machine():$/;"	f
+remove_noise	models/ddpg.py	/^    def remove_noise(self):$/;"	m	class:NoisyLinear
+reset	models/OUProcess.py	/^    def reset(self, sigma=0):$/;"	m	class:OUProcess
+reset	models/ddpg.py	/^    def reset(self, sigma):$/;"	m	class:DDPG
+reset_parameters	models/ddpg.py	/^    def reset_parameters(self):$/;"	m	class:NoisyLinear
+sample	models/prioritized_replay_memory.py	/^    def sample(self, n):$/;"	m	class:PrioritizedReplayMemory
+sample	models/replay_memory.py	/^    def sample(self, batch_size):$/;"	m	class:ReplayMemory
+sample_noise	models/ddpg.py	/^    def sample_noise(self):$/;"	m	class:Actor
+sample_noise	models/ddpg.py	/^    def sample_noise(self):$/;"	m	class:DDPG
+sample_noise	models/ddpg.py	/^    def sample_noise(self):$/;"	m	class:NoisyLinear
+save	models/prioritized_replay_memory.py	/^    def save(self, path):$/;"	m	class:PrioritizedReplayMemory
+save	models/replay_memory.py	/^    def save(self, path):$/;"	m	class:ReplayMemory
+save_actor	models/ddpg.py	/^    def save_actor(self, path):$/;"	m	class:DDPG
+save_knobs	environment/knobs.py	/^def save_knobs(knob, metrics, knob_file):$/;"	f
+save_knobs	environment/knobsALL.py	/^def save_knobs(knob, metrics, knob_file):$/;"	f
+save_knobs	environment/knobsNotDecreasMAX.py	/^def save_knobs(knob, metrics, knob_file):$/;"	f
+save_model	models/ddpg.py	/^    def save_model(self, model_dir, title):$/;"	m	class:DDPG
+save_model	models/dqn.py	/^    def save_model(self, model_dir, title):$/;"	m	class:DQN
+save_state_actions	tuner/utils.py	/^def save_state_actions(state_action, filename):$/;"	f
+serve	server/server.py	/^def serve():$/;"	f
+set_timeout	environment/utils.py	/^    def set_timeout(self, timeout):$/;"	m	class:TimeoutTransport
+setting	environment/mysql.py	/^    def setting(self, knob):$/;"	m	class:MySQLEnv
+setting_knob	tuner/get_proposal_knob.py	/^def setting_knob(env, knob):$/;"	f
+start_mysql	server/server.py	/^def start_mysql(instance_name, configs):$/;"	f
+step	environment/mysql.py	/^    def step(self, knob):$/;"	m	class:MySQLEnv
+sudo_exec	server/server.py	/^def sudo_exec(cmdline, passwd):$/;"	f
+test_mysql	environment/utils.py	/^def test_mysql(instance_name):$/;"	f
+time_end	environment/utils.py	/^def time_end(start):$/;"	f
+time_end	tuner/utils.py	/^def time_end(start):$/;"	f
+time_start	environment/utils.py	/^def time_start():$/;"	f
+time_start	tuner/utils.py	/^def time_start():$/;"	f
+time_to_str	tuner/utils.py	/^def time_to_str(timestamp):$/;"	f
+total	models/prioritized_replay_memory.py	/^    def total(self):$/;"	m	class:SumTree
+totensor	models/ddpg.py	/^    def totensor(x):$/;"	m	class:DDPG
+train_actor	models/ddpg.py	/^    def train_actor(self, batch_data, is_train=True):$/;"	m	class:DDPG
+update	environment/db.py	/^    def update(self, sql):$/;"	m	class:database
+update	models/ddpg.py	/^    def update(self):$/;"	m	class:DDPG
+update	models/dqn.py	/^    def update(self):$/;"	m	class:DQN
+update	models/prioritized_replay_memory.py	/^    def update(self, idx, error):$/;"	m	class:PrioritizedReplayMemory
+update	models/prioritized_replay_memory.py	/^    def update(self, idx, p):$/;"	m	class:SumTree
+warn	tuner/utils.py	/^    def warn(self, msg):$/;"	m	class:Logger
+write_cnf_file	server/server.py	/^def write_cnf_file(configs):$/;"	f
