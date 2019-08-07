@@ -1,0 +1,201 @@
+sysbench 1.0.14 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 100
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_store_result() returned error 1317 (Query execution was interrupted)
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest4 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest5 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 3 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest4 WHERE id BETWEEN ? AND ?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_store_result() returned error 1317 (Query execution was interrupted)
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_store_result() returned error 1317 (Query execution was interrupted)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest5 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest1 WHERE id BETWEEN ? AND ?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT SUM(k) FROM sbtest8 WHERE id BETWEEN ? AND ?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest5 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT SUM(k) FROM sbtest5 WHERE id BETWEEN ? AND ?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 2 times)
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest5 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 2 times)
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest5 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: mysql_stmt_store_result() returned error 1317 (Query execution was interrupted)
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest7 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest5 WHERE id=?'
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest8 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest3 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest4 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest5 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+(last message repeated 2 times)
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest3 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest5 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest1 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 1 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest8 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 3 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest8 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT DISTINCT c FROM sbtest4 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest6 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest4 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest3 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest1 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 2 times)
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+(last message repeated 2 times)
+FATAL: mysql_stmt_store_result() returned error 1317 (Query execution was interrupted)
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1053 (Server shutdown in progress) for query 'SELECT c FROM sbtest7 WHERE id BETWEEN ? AND ? ORDER BY c'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:432: SQL error, errno = 1053, state = '08S01': Server shutdown in progress
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest2 WHERE id=?'
+FATAL: mysql_stmt_execute() returned error 1317 (Query execution was interrupted) for query 'SELECT c FROM sbtest7 WHERE id=?'
+FATAL: `thread_run' function failed: /usr/local/share/sysbench/oltp_common.lua:419: SQL error, errno = 1317, state = '70100': Query execution was interrupted

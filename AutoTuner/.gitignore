@@ -4,8 +4,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-train_result
-tuner/nohup.out
+#train_result
+#tuner/nohup.out
 # C extensions
 *.so
 
@@ -112,19 +112,19 @@ memory
 .DS_Store
 
 # Log
-logs
-log
-save_memory
-save_knobs
-save_state_actions
-model_params
-sl_model_params
+#logs
+#log
+#save_memory
+#save_knobs
+#save_state_actions
+#model_params
+#sl_model_params
 # Result
-result
+#result
 
 eval_result
 # Pickles
 *.pkl
 *.tar.gz
 
-save_models
+#save_models
